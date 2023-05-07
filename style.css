@@ -1,9 +1,9 @@
 body {
-  background-color: #fffefe;
+  background-color: #ffffff;
 }
 
 .login-container {
-  background-color: #b4f5f1;
+  background-color: #dcd9d9;
   border-radius: 5px;
   padding: 20px;
   margin: 50px auto;
@@ -59,4 +59,23 @@ button:active{
   background-color: #3e8e41;
   box-shadow: 0 5px #666;
   transform: translateY(4px);
+}
+#titulo-primero{
+  font-size: 80px;
+  position: relative;
+  top:-20px;
+}
+a inicar{
+position:relative;
+bottom:50px;
+left:450px;
+}
+.mi-linea{
+  border-color:#030503;
+  position:relative;
+  top: -160px;
+}
+a registro{
+  position:relative;
+  right:-600px
 }
