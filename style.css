@@ -1,7 +1,14 @@
-body {
-  background-color: #ffffff;
+.hero{
+  width: 100%;
+  height: 100%;
+  background-image:url(/GcoCorp/Imagenes/Background.png);
+  background-position: center;
+  background-repeat: repeat;
+  background-repeat: scroll;
 }
-
+.logo{
+width: 50px;
+}
 .login-container {
   background-color: #dcd9d9;
   border-radius: 5px;
@@ -10,14 +17,12 @@ body {
   width: 400px;
   box-shadow: 0px 0px 10px #888888;
 }
-
 h1 {
   text-align: center;
   font-size: 36px;
   margin-bottom: 30px;
 }
 h2 {
-
 text-align: center;
 font-size: 36px;
 margin-bottom: 30px;
@@ -30,12 +35,13 @@ label {
 
 input[type="text"], input[type="password"] {
   display: block;
-  width: 95%;
+  width: 55%;
   padding: 10px;
   font-size: 18px;
   border-radius: 5px;
   border: none;
   margin-bottom: 10px;
+  
 }
 
 button[type="submit"] {
@@ -67,15 +73,22 @@ button:active{
 }
 a inicar{
 position:relative;
-bottom:50px;
-left:450px;
+bottom:-25px;
+left:525px;
+}
+a registro{
+  position:relative;
+  bottom: -25px;
+  left: 550px;
 }
 .mi-linea{
   border-color:#030503;
   position:relative;
-  top: -160px;
+  top: -150px;
 }
-a registro{
-  position:relative;
-  right:-600px
+.hero{
+  width: 100%;
+  cursor: pointer;
+  margin: 20px;
+  margin-top: 0;
 }
