@@ -1,27 +1,18 @@
-.hero{
-  width: 100%;
-  height: 100%;
-  background-image:url(/GcoCorp/Imagenes/Background.png);
-  background-position: center;
-  background-repeat: repeat;
-  background-repeat: scroll;
+*{
+  margin: 0;
+  padding:0;
+  border:0;
+  font-size: 100%;
+  vertical-align: baseline;
 }
-.logo{
-width: 50px;
-}
-.login-container {
-  background-color: #dcd9d9;
-  border-radius: 5px;
-  padding: 20px;
-  margin: 50px auto;
-  width: 400px;
-  box-shadow: 0px 0px 10px #888888;
-}
-h1 {
+
+body{
+  background-color: hsla(219, 88%, 55%, 0.589);
   text-align: center;
-  font-size: 36px;
+  font-family: sans-serif;
   margin-bottom: 30px;
 }
+
 h2 {
 text-align: center;
 font-size: 36px;
@@ -31,19 +22,39 @@ label {
   display: block;
   font-size: 18px;
   margin-bottom: 10px;
+  text-align: center;
 }
 
-input[type="text"], input[type="password"] {
+#name{
   display: block;
-  width: 55%;
+  width: 45%;
   padding: 10px;
   font-size: 18px;
-  border-radius: 5px;
+  border-radius: 10px;
   border: none;
-  margin-bottom: 10px;
-  
+  margin: 0 auto;
+  height: 20px;
 }
-
+#email{
+  display: block;
+  width: 45%;
+  padding: 10px;
+  font-size: 18px;
+  border-radius: 10px;
+  border: none;
+  margin: 0 auto;
+  height: 20px;
+}
+#message{
+  display: block;
+  width: 45%;
+  padding: 10px;
+  font-size: 18px;
+  border-radius: 10px;
+  border: none;
+  margin: 0 auto;
+  height: 20px;
+}
 button[type="submit"] {
   background-color: #4caf50;
   color: white;
@@ -55,40 +66,59 @@ button[type="submit"] {
   box-shadow: 0 5px #050101;
   display:flex;
   justify-content:center;
-
+  margin: 0 auto;
 }
 
-button[type="submit"]:hover {
-  background-color: #3e8e41;
-}
-button:active{
-  background-color: #3e8e41;
-  box-shadow: 0 5px #666;
-  transform: translateY(4px);
-}
-#titulo-primero{
-  font-size: 80px;
+.title{
+  font-size: 50px;
   position: relative;
-  top:-20px;
+  top:20px;
 }
-a inicar{
-position:relative;
-bottom:-25px;
-left:525px;
-}
-a registro{
+.login{
   position:relative;
-  bottom: -25px;
-  left: 550px;
+  bottom:-25px;
+  left:525px;
+  background-color: #dcd9d9;
+  border-radius: 5px;
+  padding: 20px;
+  margin: 50px auto;
+  width: 400px;
+  box-shadow: 0px 0px 10px #888888;
 }
 .mi-linea{
   border-color:#030503;
   position:relative;
   top: -150px;
 }
-.hero{
+.logo{
+  width: 50px; /* Cambia el ancho según tus necesidades */
+  height: auto; /* Mantenemos la proporción original */
+}
+.botones-top{
+  display: flex;
+  position: relative;
+  top: 95px;
+  left:200px;
+  height: 50px;
+  width: 150;
+  font-size:5px;
+}
+.head{
+  background-image: url(https://www.chemica-us.com/1014-thickbox_default/108-azul-claro.jpg);
+  display: flex;
+  align-items: center;
+  justify-content:space-between;
+  height: 60px;
+  position: fixed;
   width: 100%;
-  cursor: pointer;
-  margin: 20px;
-  margin-top: 0;
+  z-index: 100;
+}
+header{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.navbar{
+  display: flex;
+  margin-right: 10px;
 }

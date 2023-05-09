@@ -6,23 +6,43 @@
     <link rel="stylesheet" type="text/css" href="style.css">
     <title>Mental Health</title>
   </head>
-  <header class="encab">
-    <a href="inicio.html"><inicar>Iniciar Sesión</a>
-    <a href="registro.html"><registro>Registrarse</a>  
-  </header>
+
+ 
   <body>
-    <div class="hero">
-      
+
+    <div class="head">
+
+      <div class="logo">
+        <img src="/GcoCorp/Imagenes/Logo.png" alt="No esta cargando" class="logo"> 
+      </div>
+
+        <nav class="navbar">
+          <a href = "#" >Nosotros</a>
+          <a href = "#" >Terapia</a>
+          <a href = "#" >Planes</a>
+          <a href = "#" >P&R</a>
+          <a href="inicio.html">Iniciar Sesión</a>
+          <a href="registro.html">Registrarse</a>  
+        </nav>
+
     </div>
-      <h1 id="titulo-primero">Mental Health</h1>
-	    
-      <hr class="mi-linea">
+
+    <header>
+      <div class="content-header">
+
+        <h1 class="title" style="font-size: 30px; position: relative; top:0px; ">Mental Health</h1>
+
+      </div>
+
+    </header>
+      
       <section id="about">
-        <h2>Acerca de nosotros</h2>
+        <h2 class="title">Acerca de nosotros</h2>
+
         <p>Somos una organización dedicada a promover la salud mental y el bienestar emocional. Ofrecemos una amplia gama de servicios para ayudar a las personas a enfrentar los desafíos de la vida y mejorar su calidad de vida.</p>
       </section>
       <section id="services">
-        <h2>Nuestros servicios</h2>
+        <h2 class="title">Nuestros servicios</h2>
         <ul>
           <li>Asesoramiento individual</li>
           <li>Terapia de grupo</li>
@@ -31,15 +51,14 @@
         </ul>
       </section>
       <section id="contact">
-        <h2>Contacto</h2>
+        <h2 class="title">Contacto</h2>
         <form>
-
           <label for="name">Nombre:</label>
           <input type="text" id="name" name="name">
           <label for="email">Correo electrónico:</label>
           <input type="email" id="email" name="email">
           <label for="message">Mensaje:</label>
-          <textarea id="message" name="message"></textarea>
+          <input id="message" name="message">
           <button type="submit">Enviar</button>
         </form>
       </section>
