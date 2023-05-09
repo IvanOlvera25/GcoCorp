@@ -29,28 +29,50 @@
 
     <header>
       <div class="content-header">
-
-        <h1 class="title" style="font-size: 30px; position: relative; top:0px; ">Mental Health</h1>
-
+        <h1 class="title" style="font-size: 70px; position: relative; top: 70px; border: solid #002037; color:white">Mental Health</h1>
       </div>
-
-    </header>
+      <style>
+        #video-container {
+          position: center;
+          width: 50px; /* Anchura deseada */
+          height: 20px; /* Altura deseada */
+        }
+    
+        #video-container video {
+          position: absolute;
+          top: 180px;
+          left: 25%;
+          width: 50%;
+          height: 20%;
+        }
+     </style>   
+     
+     <div id="video-container">
+      <video controls>
+          <source src="/video.mp4" type="video/mp4">
+          
+      </video>
+     </div>
       
-      <section id="about">
-        <h2 class="title">Acerca de nosotros</h2>
+      
+    </header>
 
+      <section class= "section"> 
+        <h2 class="title">Acerca de nosotros</h2>
         <p>Somos una organización dedicada a promover la salud mental y el bienestar emocional. Ofrecemos una amplia gama de servicios para ayudar a las personas a enfrentar los desafíos de la vida y mejorar su calidad de vida.</p>
       </section>
-      <section id="services">
+
+      <section class= "section">
         <h2 class="title">Nuestros servicios</h2>
-        <ul>
+        <ul style="text-align:left;"> 
           <li>Asesoramiento individual</li>
           <li>Terapia de grupo</li>
           <li>Terapia de pareja y familiar</li>
           <li>Programas de educación y prevención</li>
         </ul>
       </section>
-      <section id="contact">
+
+      <section class="section">
         <h2 class="title">Contacto</h2>
         <form>
           <label for="name">Nombre:</label>
@@ -62,5 +84,6 @@
           <button type="submit">Enviar</button>
         </form>
       </section>
+
   </body>
 </html>

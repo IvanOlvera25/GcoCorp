@@ -7,17 +7,13 @@
 }
 
 body{
-  background-color: hsla(219, 88%, 55%, 0.589);
+  background-color: #002037;
   text-align: center;
   font-family: sans-serif;
   margin-bottom: 30px;
+  position: relative;
 }
 
-h2 {
-text-align: center;
-font-size: 36px;
-margin-bottom: 30px;
-}
 label {
   display: block;
   font-size: 18px;
@@ -68,7 +64,6 @@ button[type="submit"] {
   justify-content:center;
   margin: 0 auto;
 }
-
 .title{
   font-size: 50px;
   position: relative;
@@ -85,26 +80,12 @@ button[type="submit"] {
   width: 400px;
   box-shadow: 0px 0px 10px #888888;
 }
-.mi-linea{
-  border-color:#030503;
-  position:relative;
-  top: -150px;
-}
 .logo{
-  width: 50px; /* Cambia el ancho según tus necesidades */
-  height: auto; /* Mantenemos la proporción original */
-}
-.botones-top{
-  display: flex;
-  position: relative;
-  top: 95px;
-  left:200px;
-  height: 50px;
-  width: 150;
-  font-size:5px;
+  width: 110px; /* Cambia el ancho según tus necesidades */
+  height: 60px; /* Mantenemos la proporción original */
 }
 .head{
-  background-image: url(https://www.chemica-us.com/1014-thickbox_default/108-azul-claro.jpg);
+  background:#002037;
   display: flex;
   align-items: center;
   justify-content:space-between;
@@ -114,11 +95,40 @@ button[type="submit"] {
   z-index: 100;
 }
 header{
+  background-image: url(https://images.pexels.com/photos/235922/pexels-photo-235922.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   display: flex;
+  height: 500px;
   justify-content: center;
-  align-items: center;
 }
+
 .navbar{
   display: flex;
   margin-right: 10px;
+  
+}
+.navbar a{
+  display: block;
+  padding: 23px 20px;
+  color:#fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 15px;
+}
+.navbar a:hover{
+  background:hsla(220, 49%, 74%, 0.589)
+}
+.section{
+  color:white;
+  background-color:hsla(219, 60%, 38%, 0.589);
+  position: relative;
+  top:0px;
+  padding: 29px;
+}
+.title{
+  
+  position: relative;
+  top: 0px;
 }
