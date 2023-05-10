@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Mi formulario</title>
+  <script>
+    function enviarFormulario() {
+      // Obtener los valores de los campos de entrada
+      var nombre = document.getElementById("nombre").value;
+      var email = document.getElementById("email").value;
+      var mensaje = document.getElementById("mensaje").value;
+
+      // Crear una cadena de texto con los datos
+      var datos = "Nombre: " + nombre + "\n" +
+                  "Email: " + email + "\n" +
+                  "Mensaje: " + mensaje;
+
+      // Enviar los datos al script del lado del servidor (PHP)
+      var xhr = new XMLHttpRequest();
+      xhr.open("POST", "enviar_correo.php", true);
+      xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+      xhr.send("datos=" + encodeURIComponent(datos));
+    }
+  </script>
+</head>
+<body>
+  <form>
+    <input type="text" id="nombre" placeholder="Nombre"><br>
+    <input type="email" id="email" placeholder="Email"><br>
+    <textarea id="mensaje" placeholder="Mensaje"></textarea><br>
+    <button type="button" onclick="enviarFormulario()">Enviar</button>
+  </form>
+  <style>
+    #video-container {
+      position: center;
+      width: 300px; /* Anchura deseada */
+      height: 200px; /* Altura deseada */
+    }
+
+    #video-container video {
+      position: absolute;
+      top: 100px;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+ </style>   
+ <h1>Mi video</h1>
+ <div id="video-container">
+  <video controls>
+      <source src="/video.mp4" type="video/mp4">
+      
+  </video>
+ </div>
+ 
+</body>
+</html>
+
