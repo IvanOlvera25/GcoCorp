@@ -1,95 +1,107 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content= "IE-edge">
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <title>Mental Health</title>
-    <link rel="icon" src="/GcoCorp/boceto1/logo1.ico" type="image/icon" sizes="32x32">
+<html lang="es">
 
-    <script>
-      function toggleLogin() {
-        var loginContainer = document.getElementById('login-container');
-        loginContainer.style.display = loginContainer.style.display === 'block' ? 'none' : 'block';
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Mental Health</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+  <link rel="icon" href="/GcoCorp/boceto1/logo1.ico" type="image/icon" sizes="32x32">
+
+  <script>
+    function toggleLogin() {
+      var loginContainer = document.getElementById('login-container');
+      loginContainer.style.display = loginContainer.style.display === 'block' ? 'none' : 'block';
+    }
+  </script>
+</head>
+
+<body>
+
+  <div class="head">
+
+    <div class="logo">
+      <img src="/GcoCorp/boceto1/logo.png" alt="no" class="logo">
+    </div>
+    
+    
+<nav class="navbar">
+  <ul>
+    <li><a href="#">Nosotros</a></li>
+    <li><a href="#">Terapia</a></li>
+    <li class="dropdown">
+      <span style="color:white; position: relative; top:-7px ;">Planes <i class="fas fa-caret-down"></i></span>
+      <ul class="dropdown-menu">
+        <li><a href="#">Plan 1</a></li>
+        <li><a href="#">Plan 2</a></li>
+        <li><a href="#">Plan 3</a></li>
+      </ul>
+    <li><a href="#">P&R</a></li>
+    <li><a href="#" onclick="toggleLogin();">Iniciar Sesión</a></li>
+    <li><a href="registro.html">Registrarse</a></li>
+  </ul>
+</nav>
+  </div>
+
+  <header>
+    <div class="content-header">
+      <h1 class="title1" data-aos="fade-up" data-aos-duration="1000">Mental Health</h1>
+    </div>
+    
+    <style>
+      #video-container {
+        position: center;
+        width: 40px; /* Anchura deseada */
+        height: 20px; /* Altura deseada */
       }
-    </script>
-  </head>
 
- 
-  <body>
+      #video-container video {
+        position: absolute;
+        top: 100px;
+        left: 25%;
+        width: 45%;
+        height: 20%;
+      }
+    </style>
 
-    <div class="head">
-
-      <div class="logo">
-        <img src="/GcoCorp/boceto1/logo.png" alt="no" class="logo"> 
-      </div>
-
-        <nav class="navbar">
-          <a href = "#" >Nosotros</a>
-          
-          <!-- <u1 class = "menu-vertical">
-              <li><a href="#">Html</a></li>
-              <li><a href="#">Css</a></li>
-              <li><a href="#">Javascript</a></li>
-            </u1> -->
-            
-          <a href = "#" >Terapia</a>
-          <a href = "#" >Planes</a>
-          <a href = "#" >P&R</a>
-          <a href = "#" onclick="toggleLogin();">Iniciar Sesión</a>
-          <a href="registro.html">Registrarse</a>  
-        </nav>
-        
+    <div id="video-container">
+      <video controls>
+        <source src="/GcoCorp/boceto1/video.mp4" type="video/mp4">
+      </video>
     </div>
 
-    <header>
-      <div class="content-header">
-        <h1 class="title" style="font-size: 70px; position: relative; top: 70px; border: solid #002037; color:white">Mental Health</h1>
-      </div>
-      <style>
-        #video-container {
-          position: center;
-          width: 40px; /* Anchura deseada */
-          height: 20px; /* Altura deseada */
-        }
+  </header>
+
+  <section class="section1" data-aos="fade-right" data-aos-duration="1000">
+    <h2 class="title">Acerca de nosotros</h2>
+    <p data-aos="fade-up" data-aos-delay="500"style="text-align:justify; position: relative; top:25px;">
+      Somos una organización dedicada a promoverla salud mental y el bienestar emocional. Ofrecemos una amplia gama de servicios para ayudar a las personas a enfrentar los desafíos de la vida y mejorar su calidad de vida.
+    </p>
+    <img src="/GcoCorp/boceto1/acercade1.png" alt="Error al cargar" class="foto-acerca1">
     
-        #video-container video {
-          position: absolute;
-          top: 180px;
-          left: 25%;
-          width: 45%;
-          height: 20%;
-        }
-        
-     </style>   
-     
-     <div id="video-container">
-      <video controls>
-          <source src="/GcoCorp/boceto1/video.mp4" type="video/mp4">
-          
-      </video>
-     </div>
-      
-      
-    </header>
-
-      <section class= "section1"> 
-        <h2 class="title">Acerca de nosotros</h2>
-        <p style="text-align:justify; position: relative; top:25px;">Somos una organización dedicada a promover la salud mental y el bienestar emocional. Ofrecemos una amplia gama de servicios para ayudar a las personas a enfrentar los desafíos de la vida y mejorar su calidad de vida.</p>
       </section>
-
-      <section class= "section2">
+      <section class="section2" data-aos="fade-left" data-aos-duration="1000">
         <h2 class="title">Nuestros servicios</h2>
-
-        <ul style="text-align:left; position: relative; top:50px;"> 
-          <li>Asesoramiento individual</li>
-          <li>Terapia de grupo</li>
-          <li>Terapia de pareja y familiar</li>
-          <li>Programas de educación y prevención</li>
-        </ul>
+    <ul style="text-align:left; position: relative; top:50px;">
+      <li>Asesoramiento individual</li>
+      <li>Terapia de grupo</li>
+      <li>Terapia de pareja y familiar</li>
+      <li>Programas de educación y prevención</li>
+    </ul>
       </section>
-
-      <section class="section3">
+      <section class="section-intro">
+        <div class="intro">
+          <p data-aos="fade-up">Bienvenidos a Mental Heath, la plataforma líder en servicios de consultas psicológicas en línea, donde nuestra misión es mejorar la experiencia y el bienestar de nuestros pacientes en su camino hacia una salud mental óptima. Nuestra organización está comprometida con brindar un apoyo constante y personalizado, ofreciendo un entorno seguro y accesible para quienes buscan ayuda.</p>
+          <p data-aos="fade-up" data-aos-delay="500">En Mental Health, nos enorgullecemos de contar con un directorio de psicólogos altamente calificados y especializados en diversas áreas de la salud mental. Nuestro objetivo es facilitar el proceso de encontrar al profesional adecuado para cada paciente, garantizando una atención de calidad y ajustada a sus necesidades individuales.</p>
+          <p data-aos="fade-up" data-aos-delay="500">Nuestra innovadora plataforma proporciona herramientas y recursos que mejoran la comunicación y la estructura de las consultas, optimizando la interacción entre el paciente y el psicólogo. Estas herramientas incluyen seguimiento de citas, acceso a materiales de apoyo y un sistema de mensajería seguro y confidencial.</p>
+          <p data-aos="fade-up" data-aos-delay="500">En Mental Health, creemos en el poder de la conexión humana y el acompañamiento constante para lograr un cambio significativo en la vida de nuestros pacientes. Estamos comprometidos con su bienestar y crecimiento personal, y trabajamos incansablemente para ofrecer una experiencia única e integral en el campo de la salud mental en línea.</p>
+          <p data-aos="fade-up" data-aos-delay="500">Únase a nuestra comunidad y descubra cómo [Nombre de la Organización] puede ser el aliado perfecto en su viaje hacia una vida más feliz y saludable. Juntos, superaremos los desafíos y celebraremos los logros en el camino hacia una salud mental plena y enriquecedora.</p>
+        </div>
+      </section>
+      <section class="section3" data-aos="fade-right" data-aos-duration="1000">
         <h2 class="title">Contacto</h2>
         <form>
           <label for="name">Nombre:</label>
@@ -101,19 +113,24 @@
           <button type="submit">Enviar</button>
         </form>
       </section>
-      
-      <div id="login-container" class="login-container">
-        
+      <div id="login-container" class="login-container" data-aos="fade-up" data-aos-duration="1000">
         <form>
           <h2 id="i-c">Iniciar Sesión</h2>
           <label for="login-email">Correo electrónico:</label>
           <input type="email" id="login-email" name="login-email">
           <label for="login-password">Contraseña:</label>
           <input type="password" id="login-password" name="login-password">
-          <button type="submit" id ="iniciar2">Iniciar sesión</button>
+          <button type="submit" id="iniciar2">Iniciar sesión</button>
         </form>
-        <button onclick="toggleLogin();"id="cerrarb">Cerrar</button>
+        <button onclick="toggleLogin();" id="cerrarb">Cerrar</button>
       </div>
-  
-  </body>
-</html>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+      <script>
+        AOS.init();
+      </script>
+
+      <script>
+        AOS.init();
+      </script>      
+    </body>
+    </html>
